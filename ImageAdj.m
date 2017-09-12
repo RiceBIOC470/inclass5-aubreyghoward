@@ -4,9 +4,11 @@
 
 
 function [adjimg]=ImageAdj(imgin,low,high)
-%will fix an image for you so that the bottom and top 1% of the pixals are 
+%will fix an image for you so that the bottom and top % of the pixals are 
 %adjusted white/black as defined by the user.
     img = imread(imgin);
-    adjimg = imshow(img,stretchlim(img,[low,high]))
+    filter = stretchlim(img,[low high]);
+    filter = filter([1 2]);
+    adjimg = imshow(img,filter);
 end
 
