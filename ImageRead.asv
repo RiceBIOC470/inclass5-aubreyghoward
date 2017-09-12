@@ -1,0 +1,14 @@
+% 1. (a) Write a function that reads in an image and displays it so that 1%
+% of the pixels are black and 1% of the pixels are white. Hint: your
+% function can call the stretchlim function, see the help for that function.
+
+function [img] = ImageRead(inputs)
+    img = imread(inputs);
+    %img = imshow(img,[]);
+    low_high = stretchlim(img)
+    dispimg = 
+
+
+
+
+end
