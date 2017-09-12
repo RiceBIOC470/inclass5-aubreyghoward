@@ -31,3 +31,6 @@ img = ImageAdj2 ()
 %is, returns the complementary base pair for each base, read from end
 %to beginning. (e.g. the reverse compliment of ATGC is GCAT). Do not use the
 %builtin MATLAB function for this. 
+clear all
+
+cdna = hwcdna('GcTaatatattat')
